@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="get_image" type="dataset_take_off.py"    name="dataset_take_off"         output="screen"/>
+    <node pkg="get_image" type="take_target_off_desk.py"  name="take_target_off_desk"      output="screen"/>
+</launch>

@@ -1,0 +1,57 @@
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 2
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1

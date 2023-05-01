@@ -1,0 +1,4 @@
+- method=C2FARM
+- rlbench.task=reach_target
+- rlbench.demo_path=/media/ylc/YETONG/2
+- framework.gpu=0

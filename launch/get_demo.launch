@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="get_image" type="dataset.py"               name="dataset"         output="screen"/>
+    <node pkg="get_image" type="move_start.py"            name="move_start"      output="screen"/>
+</launch>

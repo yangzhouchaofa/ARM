@@ -1,0 +1,80 @@
+[2023-04-04 12:02:00,479][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: take_lid_off_saucepan
+  demos: 10
+  demo_path: /home/ylc/ARM/ARM-main/examples
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-04-04 12:02:00,492][root][INFO] - Using training device cuda:0.
+[2023-04-04 12:02:00,492][root][INFO] - Using env device cuda:0.
+[2023-04-04 12:02:00,505][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/take_lid_off_saucepan/C2FARM
+[2023-04-04 12:02:00,505][root][INFO] - Starting seed 0.
+[2023-04-04 12:02:00,506][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-04-04 12:02:00,506][root][INFO] - 	 timesteps: 1
+[2023-04-04 12:02:00,506][root][INFO] - 	 replay_capacity: 100000
+[2023-04-04 12:02:00,506][root][INFO] - 	 batch_size: 1
+[2023-04-04 12:02:00,506][root][INFO] - 	 update_horizon: 1
+[2023-04-04 12:02:00,506][root][INFO] - 	 gamma: 0.990000
+[2023-04-04 12:02:00,506][root][INFO] - 	 saving to RAM
+[2023-04-04 12:02:00,512][root][INFO] - Filling replay with demos...
+[2023-04-04 12:02:02,733][root][INFO] - Replay filled with demos.
+[2023-04-04 12:02:05,651][root][INFO] - # Q Params: 879553
+[2023-04-04 12:02:05,705][root][INFO] - # Q Params: 1186459
+[2023-04-04 12:02:25,703][root][INFO] - Step 100. Sample time: 0.0014526844024658203. Step time: 0.09787726402282715. Replay ratio: 6.249999609375024.
+[2023-04-04 12:03:41,907][root][INFO] - Step 200. Sample time: 0.0018343925476074219. Step time: 0.09875750541687012. Replay ratio: 12.499999218750048.
+[2023-04-04 12:04:47,890][root][INFO] - Step 300. Sample time: 0.0015947818756103516. Step time: 0.10080838203430176. Replay ratio: 18.749998828125072.
+[2023-04-04 12:05:53,416][root][INFO] - Step 400. Sample time: 0.0014603137969970703. Step time: 0.09702587127685547. Replay ratio: 24.999998437500096.
+[2023-04-04 12:06:26,304][root][INFO] - SIGINT captured. Shutting down.This may take a few seconds.
+[2023-04-04 12:06:30,468][root][WARNING] - Env train_env0 failed (1 times <= 2000). restarting

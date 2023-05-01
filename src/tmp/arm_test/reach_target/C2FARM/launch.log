@@ -1,0 +1,2583 @@
+[2023-03-29 14:04:30,666][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-29 14:04:31,133][root][INFO] - Using training device cuda:0.
+[2023-03-29 14:04:31,134][root][INFO] - Using env device cuda:0.
+[2023-03-29 14:04:31,328][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-29 14:04:31,328][root][INFO] - Starting seed 0.
+[2023-03-29 14:04:31,329][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-29 14:04:31,329][root][INFO] - 	 timesteps: 1
+[2023-03-29 14:04:31,329][root][INFO] - 	 replay_capacity: 100000
+[2023-03-29 14:04:31,329][root][INFO] - 	 batch_size: 1
+[2023-03-29 14:04:31,329][root][INFO] - 	 update_horizon: 1
+[2023-03-29 14:04:31,329][root][INFO] - 	 gamma: 0.990000
+[2023-03-29 14:04:31,329][root][INFO] - 	 saving to RAM
+[2023-03-29 14:04:31,381][root][INFO] - Filling replay with demos...
+[2023-03-29 14:06:11,206][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-29 14:06:11,228][root][INFO] - Using training device cuda:0.
+[2023-03-29 14:06:11,228][root][INFO] - Using env device cuda:0.
+[2023-03-29 14:06:11,247][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-29 14:06:11,247][root][INFO] - Starting seed 0.
+[2023-03-29 14:06:11,247][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-29 14:06:11,247][root][INFO] - 	 timesteps: 1
+[2023-03-29 14:06:11,248][root][INFO] - 	 replay_capacity: 100000
+[2023-03-29 14:06:11,248][root][INFO] - 	 batch_size: 1
+[2023-03-29 14:06:11,248][root][INFO] - 	 update_horizon: 1
+[2023-03-29 14:06:11,248][root][INFO] - 	 gamma: 0.990000
+[2023-03-29 14:06:11,248][root][INFO] - 	 saving to RAM
+[2023-03-29 14:06:11,255][root][INFO] - Filling replay with demos...
+[2023-03-29 14:07:03,202][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-29 14:07:03,224][root][INFO] - Using training device cuda:0.
+[2023-03-29 14:07:03,224][root][INFO] - Using env device cuda:0.
+[2023-03-29 14:07:03,245][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-29 14:07:03,245][root][INFO] - Starting seed 0.
+[2023-03-29 14:07:03,245][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-29 14:07:03,245][root][INFO] - 	 timesteps: 1
+[2023-03-29 14:07:03,246][root][INFO] - 	 replay_capacity: 100000
+[2023-03-29 14:07:03,246][root][INFO] - 	 batch_size: 1
+[2023-03-29 14:07:03,246][root][INFO] - 	 update_horizon: 1
+[2023-03-29 14:07:03,246][root][INFO] - 	 gamma: 0.990000
+[2023-03-29 14:07:03,246][root][INFO] - 	 saving to RAM
+[2023-03-29 14:07:03,254][root][INFO] - Filling replay with demos...
+[2023-03-29 14:07:44,695][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-29 14:07:44,719][root][INFO] - Using training device cuda:0.
+[2023-03-29 14:07:44,719][root][INFO] - Using env device cuda:0.
+[2023-03-29 14:07:44,756][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-29 14:07:44,756][root][INFO] - Starting seed 0.
+[2023-03-29 14:07:44,758][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-29 14:07:44,758][root][INFO] - 	 timesteps: 1
+[2023-03-29 14:07:44,758][root][INFO] - 	 replay_capacity: 100000
+[2023-03-29 14:07:44,758][root][INFO] - 	 batch_size: 1
+[2023-03-29 14:07:44,758][root][INFO] - 	 update_horizon: 1
+[2023-03-29 14:07:44,759][root][INFO] - 	 gamma: 0.990000
+[2023-03-29 14:07:44,759][root][INFO] - 	 saving to RAM
+[2023-03-29 14:07:44,769][root][INFO] - Filling replay with demos...
+[2023-03-29 14:26:51,701][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-29 14:26:51,707][root][INFO] - Using training device cuda:0.
+[2023-03-29 14:26:51,707][root][INFO] - Using env device cuda:0.
+[2023-03-29 14:26:51,722][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-29 14:26:51,723][root][INFO] - Starting seed 0.
+[2023-03-29 14:26:51,723][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-29 14:26:51,723][root][INFO] - 	 timesteps: 1
+[2023-03-29 14:26:51,723][root][INFO] - 	 replay_capacity: 100000
+[2023-03-29 14:26:51,723][root][INFO] - 	 batch_size: 1
+[2023-03-29 14:26:51,723][root][INFO] - 	 update_horizon: 1
+[2023-03-29 14:26:51,723][root][INFO] - 	 gamma: 0.990000
+[2023-03-29 14:26:51,723][root][INFO] - 	 saving to RAM
+[2023-03-29 14:26:51,730][root][INFO] - Filling replay with demos...
+[2023-03-29 14:27:26,411][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-29 14:27:26,436][root][INFO] - Using training device cuda:0.
+[2023-03-29 14:27:26,437][root][INFO] - Using env device cuda:0.
+[2023-03-29 14:27:26,477][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-29 14:27:26,478][root][INFO] - Starting seed 0.
+[2023-03-29 14:27:26,479][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-29 14:27:26,480][root][INFO] - 	 timesteps: 1
+[2023-03-29 14:27:26,480][root][INFO] - 	 replay_capacity: 100000
+[2023-03-29 14:27:26,480][root][INFO] - 	 batch_size: 1
+[2023-03-29 14:27:26,480][root][INFO] - 	 update_horizon: 1
+[2023-03-29 14:27:26,480][root][INFO] - 	 gamma: 0.990000
+[2023-03-29 14:27:26,480][root][INFO] - 	 saving to RAM
+[2023-03-29 14:27:26,490][root][INFO] - Filling replay with demos...
+[2023-03-29 14:28:07,367][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-29 14:28:07,392][root][INFO] - Using training device cuda:0.
+[2023-03-29 14:28:07,392][root][INFO] - Using env device cuda:0.
+[2023-03-29 14:28:07,434][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-29 14:28:07,435][root][INFO] - Starting seed 0.
+[2023-03-29 14:28:07,437][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-29 14:28:07,437][root][INFO] - 	 timesteps: 1
+[2023-03-29 14:28:07,437][root][INFO] - 	 replay_capacity: 100000
+[2023-03-29 14:28:07,437][root][INFO] - 	 batch_size: 1
+[2023-03-29 14:28:07,437][root][INFO] - 	 update_horizon: 1
+[2023-03-29 14:28:07,437][root][INFO] - 	 gamma: 0.990000
+[2023-03-29 14:28:07,438][root][INFO] - 	 saving to RAM
+[2023-03-29 14:28:07,447][root][INFO] - Filling replay with demos...
+[2023-03-29 20:57:01,259][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-29 20:57:01,284][root][INFO] - Using training device cuda:0.
+[2023-03-29 20:57:01,284][root][INFO] - Using env device cuda:0.
+[2023-03-29 20:57:01,302][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-29 20:57:01,302][root][INFO] - Starting seed 0.
+[2023-03-29 20:57:01,302][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-29 20:57:01,302][root][INFO] - 	 timesteps: 1
+[2023-03-29 20:57:01,303][root][INFO] - 	 replay_capacity: 100000
+[2023-03-29 20:57:01,303][root][INFO] - 	 batch_size: 1
+[2023-03-29 20:57:01,303][root][INFO] - 	 update_horizon: 1
+[2023-03-29 20:57:01,303][root][INFO] - 	 gamma: 0.990000
+[2023-03-29 20:57:01,303][root][INFO] - 	 saving to RAM
+[2023-03-29 20:57:01,349][root][INFO] - Filling replay with demos...
+[2023-03-29 20:58:07,562][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-29 20:58:07,568][root][INFO] - Using training device cuda:0.
+[2023-03-29 20:58:07,568][root][INFO] - Using env device cuda:0.
+[2023-03-29 20:58:07,582][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-29 20:58:07,582][root][INFO] - Starting seed 0.
+[2023-03-29 20:58:07,582][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-29 20:58:07,583][root][INFO] - 	 timesteps: 1
+[2023-03-29 20:58:07,583][root][INFO] - 	 replay_capacity: 100000
+[2023-03-29 20:58:07,583][root][INFO] - 	 batch_size: 1
+[2023-03-29 20:58:07,583][root][INFO] - 	 update_horizon: 1
+[2023-03-29 20:58:07,583][root][INFO] - 	 gamma: 0.990000
+[2023-03-29 20:58:07,583][root][INFO] - 	 saving to RAM
+[2023-03-29 20:58:07,587][root][INFO] - Filling replay with demos...
+[2023-03-29 21:25:34,769][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-29 21:25:34,792][root][INFO] - Using training device cuda:0.
+[2023-03-29 21:25:34,793][root][INFO] - Using env device cuda:0.
+[2023-03-29 21:25:34,836][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-29 21:25:34,836][root][INFO] - Starting seed 0.
+[2023-03-29 21:25:34,838][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-29 21:25:34,838][root][INFO] - 	 timesteps: 1
+[2023-03-29 21:25:34,838][root][INFO] - 	 replay_capacity: 100000
+[2023-03-29 21:25:34,838][root][INFO] - 	 batch_size: 1
+[2023-03-29 21:25:34,838][root][INFO] - 	 update_horizon: 1
+[2023-03-29 21:25:34,838][root][INFO] - 	 gamma: 0.990000
+[2023-03-29 21:25:34,839][root][INFO] - 	 saving to RAM
+[2023-03-29 21:25:34,846][root][INFO] - Filling replay with demos...
+[2023-03-29 21:34:38,638][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-29 21:34:38,668][root][INFO] - Using training device cuda:0.
+[2023-03-29 21:34:38,668][root][INFO] - Using env device cuda:0.
+[2023-03-29 21:34:38,683][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-29 21:34:38,683][root][INFO] - Starting seed 0.
+[2023-03-29 21:34:38,684][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-29 21:34:38,684][root][INFO] - 	 timesteps: 1
+[2023-03-29 21:34:38,684][root][INFO] - 	 replay_capacity: 100000
+[2023-03-29 21:34:38,684][root][INFO] - 	 batch_size: 1
+[2023-03-29 21:34:38,684][root][INFO] - 	 update_horizon: 1
+[2023-03-29 21:34:38,684][root][INFO] - 	 gamma: 0.990000
+[2023-03-29 21:34:38,684][root][INFO] - 	 saving to RAM
+[2023-03-29 21:34:38,688][root][INFO] - Filling replay with demos...
+[2023-03-29 21:36:41,870][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-29 21:36:41,900][root][INFO] - Using training device cuda:0.
+[2023-03-29 21:36:41,900][root][INFO] - Using env device cuda:0.
+[2023-03-29 21:36:41,915][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-29 21:36:41,915][root][INFO] - Starting seed 0.
+[2023-03-29 21:36:41,915][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-29 21:36:41,916][root][INFO] - 	 timesteps: 1
+[2023-03-29 21:36:41,916][root][INFO] - 	 replay_capacity: 100000
+[2023-03-29 21:36:41,916][root][INFO] - 	 batch_size: 1
+[2023-03-29 21:36:41,916][root][INFO] - 	 update_horizon: 1
+[2023-03-29 21:36:41,916][root][INFO] - 	 gamma: 0.990000
+[2023-03-29 21:36:41,916][root][INFO] - 	 saving to RAM
+[2023-03-29 21:36:41,920][root][INFO] - Filling replay with demos...
+[2023-03-29 21:37:04,798][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-29 21:37:04,823][root][INFO] - Using training device cuda:0.
+[2023-03-29 21:37:04,823][root][INFO] - Using env device cuda:0.
+[2023-03-29 21:37:04,838][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-29 21:37:04,838][root][INFO] - Starting seed 0.
+[2023-03-29 21:37:04,838][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-29 21:37:04,838][root][INFO] - 	 timesteps: 1
+[2023-03-29 21:37:04,838][root][INFO] - 	 replay_capacity: 100000
+[2023-03-29 21:37:04,838][root][INFO] - 	 batch_size: 1
+[2023-03-29 21:37:04,838][root][INFO] - 	 update_horizon: 1
+[2023-03-29 21:37:04,838][root][INFO] - 	 gamma: 0.990000
+[2023-03-29 21:37:04,838][root][INFO] - 	 saving to RAM
+[2023-03-29 21:37:04,843][root][INFO] - Filling replay with demos...
+[2023-03-29 21:55:32,222][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-29 21:55:32,244][root][INFO] - Using training device cuda:0.
+[2023-03-29 21:55:32,244][root][INFO] - Using env device cuda:0.
+[2023-03-29 21:55:32,260][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-29 21:55:32,260][root][INFO] - Starting seed 0.
+[2023-03-29 21:55:32,261][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-29 21:55:32,261][root][INFO] - 	 timesteps: 1
+[2023-03-29 21:55:32,261][root][INFO] - 	 replay_capacity: 100000
+[2023-03-29 21:55:32,261][root][INFO] - 	 batch_size: 1
+[2023-03-29 21:55:32,261][root][INFO] - 	 update_horizon: 1
+[2023-03-29 21:55:32,261][root][INFO] - 	 gamma: 0.990000
+[2023-03-29 21:55:32,261][root][INFO] - 	 saving to RAM
+[2023-03-29 21:55:32,266][root][INFO] - Filling replay with demos...
+[2023-03-30 16:17:20,949][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-30 16:17:21,184][root][INFO] - Using training device cuda:0.
+[2023-03-30 16:17:21,185][root][INFO] - Using env device cuda:0.
+[2023-03-30 16:17:21,274][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-30 16:17:21,275][root][INFO] - Starting seed 0.
+[2023-03-30 16:17:21,275][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-30 16:17:21,275][root][INFO] - 	 timesteps: 1
+[2023-03-30 16:17:21,276][root][INFO] - 	 replay_capacity: 100000
+[2023-03-30 16:17:21,276][root][INFO] - 	 batch_size: 1
+[2023-03-30 16:17:21,276][root][INFO] - 	 update_horizon: 1
+[2023-03-30 16:17:21,276][root][INFO] - 	 gamma: 0.990000
+[2023-03-30 16:17:21,276][root][INFO] - 	 saving to RAM
+[2023-03-30 16:17:21,334][root][INFO] - Filling replay with demos...
+[2023-03-30 16:23:27,325][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-30 16:23:27,330][root][INFO] - Using training device cuda:0.
+[2023-03-30 16:23:27,330][root][INFO] - Using env device cuda:0.
+[2023-03-30 16:23:27,345][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-30 16:23:27,345][root][INFO] - Starting seed 0.
+[2023-03-30 16:23:27,345][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-30 16:23:27,345][root][INFO] - 	 timesteps: 1
+[2023-03-30 16:23:27,345][root][INFO] - 	 replay_capacity: 100000
+[2023-03-30 16:23:27,346][root][INFO] - 	 batch_size: 1
+[2023-03-30 16:23:27,346][root][INFO] - 	 update_horizon: 1
+[2023-03-30 16:23:27,346][root][INFO] - 	 gamma: 0.990000
+[2023-03-30 16:23:27,346][root][INFO] - 	 saving to RAM
+[2023-03-30 16:23:27,350][root][INFO] - Filling replay with demos...
+[2023-03-30 16:23:35,005][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-30 16:23:35,027][root][INFO] - Using training device cuda:0.
+[2023-03-30 16:23:35,027][root][INFO] - Using env device cuda:0.
+[2023-03-30 16:23:35,042][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-30 16:23:35,042][root][INFO] - Starting seed 0.
+[2023-03-30 16:23:35,043][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-30 16:23:35,043][root][INFO] - 	 timesteps: 1
+[2023-03-30 16:23:35,043][root][INFO] - 	 replay_capacity: 100000
+[2023-03-30 16:23:35,043][root][INFO] - 	 batch_size: 1
+[2023-03-30 16:23:35,043][root][INFO] - 	 update_horizon: 1
+[2023-03-30 16:23:35,043][root][INFO] - 	 gamma: 0.990000
+[2023-03-30 16:23:35,043][root][INFO] - 	 saving to RAM
+[2023-03-30 16:23:35,048][root][INFO] - Filling replay with demos...
+[2023-03-30 16:25:56,499][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-30 16:25:56,527][root][INFO] - Using training device cuda:0.
+[2023-03-30 16:25:56,527][root][INFO] - Using env device cuda:0.
+[2023-03-30 16:25:56,542][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-30 16:25:56,542][root][INFO] - Starting seed 0.
+[2023-03-30 16:25:56,542][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-30 16:25:56,542][root][INFO] - 	 timesteps: 1
+[2023-03-30 16:25:56,542][root][INFO] - 	 replay_capacity: 100000
+[2023-03-30 16:25:56,543][root][INFO] - 	 batch_size: 1
+[2023-03-30 16:25:56,543][root][INFO] - 	 update_horizon: 1
+[2023-03-30 16:25:56,543][root][INFO] - 	 gamma: 0.990000
+[2023-03-30 16:25:56,543][root][INFO] - 	 saving to RAM
+[2023-03-30 16:25:56,547][root][INFO] - Filling replay with demos...
+[2023-03-30 16:26:06,341][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-30 16:26:06,369][root][INFO] - Using training device cuda:0.
+[2023-03-30 16:26:06,369][root][INFO] - Using env device cuda:0.
+[2023-03-30 16:26:06,384][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-30 16:26:06,384][root][INFO] - Starting seed 0.
+[2023-03-30 16:26:06,384][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-30 16:26:06,385][root][INFO] - 	 timesteps: 1
+[2023-03-30 16:26:06,385][root][INFO] - 	 replay_capacity: 100000
+[2023-03-30 16:26:06,385][root][INFO] - 	 batch_size: 1
+[2023-03-30 16:26:06,385][root][INFO] - 	 update_horizon: 1
+[2023-03-30 16:26:06,385][root][INFO] - 	 gamma: 0.990000
+[2023-03-30 16:26:06,385][root][INFO] - 	 saving to RAM
+[2023-03-30 16:26:06,389][root][INFO] - Filling replay with demos...
+[2023-03-30 16:31:32,825][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-30 16:31:32,831][root][INFO] - Using training device cuda:0.
+[2023-03-30 16:31:32,832][root][INFO] - Using env device cuda:0.
+[2023-03-30 16:31:32,851][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-30 16:31:32,851][root][INFO] - Starting seed 0.
+[2023-03-30 16:31:32,852][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-30 16:31:32,852][root][INFO] - 	 timesteps: 1
+[2023-03-30 16:31:32,852][root][INFO] - 	 replay_capacity: 100000
+[2023-03-30 16:31:32,852][root][INFO] - 	 batch_size: 1
+[2023-03-30 16:31:32,852][root][INFO] - 	 update_horizon: 1
+[2023-03-30 16:31:32,852][root][INFO] - 	 gamma: 0.990000
+[2023-03-30 16:31:32,852][root][INFO] - 	 saving to RAM
+[2023-03-30 16:31:32,857][root][INFO] - Filling replay with demos...
+[2023-03-30 17:13:57,316][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-30 17:13:57,343][root][INFO] - Using training device cuda:0.
+[2023-03-30 17:13:57,343][root][INFO] - Using env device cuda:0.
+[2023-03-30 17:13:57,363][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-30 17:13:57,363][root][INFO] - Starting seed 0.
+[2023-03-30 17:13:57,363][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-30 17:13:57,364][root][INFO] - 	 timesteps: 1
+[2023-03-30 17:13:57,364][root][INFO] - 	 replay_capacity: 100000
+[2023-03-30 17:13:57,364][root][INFO] - 	 batch_size: 1
+[2023-03-30 17:13:57,364][root][INFO] - 	 update_horizon: 1
+[2023-03-30 17:13:57,364][root][INFO] - 	 gamma: 0.990000
+[2023-03-30 17:13:57,364][root][INFO] - 	 saving to RAM
+[2023-03-30 17:13:57,369][root][INFO] - Filling replay with demos...
+[2023-03-30 17:14:56,246][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-30 17:14:56,276][root][INFO] - Using training device cuda:0.
+[2023-03-30 17:14:56,276][root][INFO] - Using env device cuda:0.
+[2023-03-30 17:14:56,302][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-30 17:14:56,302][root][INFO] - Starting seed 0.
+[2023-03-30 17:14:56,302][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-30 17:14:56,302][root][INFO] - 	 timesteps: 1
+[2023-03-30 17:14:56,302][root][INFO] - 	 replay_capacity: 100000
+[2023-03-30 17:14:56,302][root][INFO] - 	 batch_size: 1
+[2023-03-30 17:14:56,302][root][INFO] - 	 update_horizon: 1
+[2023-03-30 17:14:56,303][root][INFO] - 	 gamma: 0.990000
+[2023-03-30 17:14:56,303][root][INFO] - 	 saving to RAM
+[2023-03-30 17:14:56,307][root][INFO] - Filling replay with demos...
+[2023-03-30 17:19:07,564][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-30 17:19:07,587][root][INFO] - Using training device cuda:0.
+[2023-03-30 17:19:07,587][root][INFO] - Using env device cuda:0.
+[2023-03-30 17:19:07,626][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-30 17:19:07,627][root][INFO] - Starting seed 0.
+[2023-03-30 17:19:07,628][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-30 17:19:07,629][root][INFO] - 	 timesteps: 1
+[2023-03-30 17:19:07,629][root][INFO] - 	 replay_capacity: 100000
+[2023-03-30 17:19:07,629][root][INFO] - 	 batch_size: 1
+[2023-03-30 17:19:07,629][root][INFO] - 	 update_horizon: 1
+[2023-03-30 17:19:07,629][root][INFO] - 	 gamma: 0.990000
+[2023-03-30 17:19:07,629][root][INFO] - 	 saving to RAM
+[2023-03-30 17:19:07,637][root][INFO] - Filling replay with demos...
+[2023-03-30 18:31:22,526][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-30 18:31:22,559][root][INFO] - Using training device cuda:0.
+[2023-03-30 18:31:22,559][root][INFO] - Using env device cuda:0.
+[2023-03-30 18:31:22,594][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-30 18:31:22,594][root][INFO] - Starting seed 0.
+[2023-03-30 18:31:22,595][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-30 18:31:22,595][root][INFO] - 	 timesteps: 1
+[2023-03-30 18:31:22,595][root][INFO] - 	 replay_capacity: 100000
+[2023-03-30 18:31:22,596][root][INFO] - 	 batch_size: 1
+[2023-03-30 18:31:22,596][root][INFO] - 	 update_horizon: 1
+[2023-03-30 18:31:22,596][root][INFO] - 	 gamma: 0.990000
+[2023-03-30 18:31:22,596][root][INFO] - 	 saving to RAM
+[2023-03-30 18:31:22,600][root][INFO] - Filling replay with demos...
+[2023-03-30 18:32:06,793][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-30 18:32:06,825][root][INFO] - Using training device cuda:0.
+[2023-03-30 18:32:06,825][root][INFO] - Using env device cuda:0.
+[2023-03-30 18:32:06,881][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-30 18:32:06,881][root][INFO] - Starting seed 0.
+[2023-03-30 18:32:06,883][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-30 18:32:06,883][root][INFO] - 	 timesteps: 1
+[2023-03-30 18:32:06,883][root][INFO] - 	 replay_capacity: 100000
+[2023-03-30 18:32:06,884][root][INFO] - 	 batch_size: 1
+[2023-03-30 18:32:06,884][root][INFO] - 	 update_horizon: 1
+[2023-03-30 18:32:06,884][root][INFO] - 	 gamma: 0.990000
+[2023-03-30 18:32:06,884][root][INFO] - 	 saving to RAM
+[2023-03-30 18:32:06,891][root][INFO] - Filling replay with demos...
+[2023-03-30 18:33:16,761][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-30 18:33:16,783][root][INFO] - Using training device cuda:0.
+[2023-03-30 18:33:16,783][root][INFO] - Using env device cuda:0.
+[2023-03-30 18:33:16,797][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-30 18:33:16,797][root][INFO] - Starting seed 0.
+[2023-03-30 18:33:16,798][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-30 18:33:16,798][root][INFO] - 	 timesteps: 1
+[2023-03-30 18:33:16,798][root][INFO] - 	 replay_capacity: 100000
+[2023-03-30 18:33:16,798][root][INFO] - 	 batch_size: 1
+[2023-03-30 18:33:16,798][root][INFO] - 	 update_horizon: 1
+[2023-03-30 18:33:16,798][root][INFO] - 	 gamma: 0.990000
+[2023-03-30 18:33:16,798][root][INFO] - 	 saving to RAM
+[2023-03-30 18:33:16,803][root][INFO] - Filling replay with demos...
+[2023-03-30 18:33:44,588][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-30 18:33:44,615][root][INFO] - Using training device cuda:0.
+[2023-03-30 18:33:44,615][root][INFO] - Using env device cuda:0.
+[2023-03-30 18:33:44,654][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-30 18:33:44,655][root][INFO] - Starting seed 0.
+[2023-03-30 18:33:44,656][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-30 18:33:44,657][root][INFO] - 	 timesteps: 1
+[2023-03-30 18:33:44,657][root][INFO] - 	 replay_capacity: 100000
+[2023-03-30 18:33:44,657][root][INFO] - 	 batch_size: 1
+[2023-03-30 18:33:44,657][root][INFO] - 	 update_horizon: 1
+[2023-03-30 18:33:44,657][root][INFO] - 	 gamma: 0.990000
+[2023-03-30 18:33:44,657][root][INFO] - 	 saving to RAM
+[2023-03-30 18:33:44,665][root][INFO] - Filling replay with demos...
+[2023-03-30 18:36:07,325][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-03-30 18:36:07,349][root][INFO] - Using training device cuda:0.
+[2023-03-30 18:36:07,349][root][INFO] - Using env device cuda:0.
+[2023-03-30 18:36:07,388][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-03-30 18:36:07,389][root][INFO] - Starting seed 0.
+[2023-03-30 18:36:07,390][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-03-30 18:36:07,391][root][INFO] - 	 timesteps: 1
+[2023-03-30 18:36:07,391][root][INFO] - 	 replay_capacity: 100000
+[2023-03-30 18:36:07,391][root][INFO] - 	 batch_size: 1
+[2023-03-30 18:36:07,391][root][INFO] - 	 update_horizon: 1
+[2023-03-30 18:36:07,391][root][INFO] - 	 gamma: 0.990000
+[2023-03-30 18:36:07,391][root][INFO] - 	 saving to RAM
+[2023-03-30 18:36:07,399][root][INFO] - Filling replay with demos...
+[2023-04-04 08:27:07,927][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-04-04 08:27:08,286][root][INFO] - Using training device cuda:0.
+[2023-04-04 08:27:08,286][root][INFO] - Using env device cuda:0.
+[2023-04-04 08:27:08,384][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-04-04 08:27:08,384][root][INFO] - Starting seed 0.
+[2023-04-04 08:27:08,384][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-04-04 08:27:08,385][root][INFO] - 	 timesteps: 1
+[2023-04-04 08:27:08,385][root][INFO] - 	 replay_capacity: 100000
+[2023-04-04 08:27:08,385][root][INFO] - 	 batch_size: 1
+[2023-04-04 08:27:08,385][root][INFO] - 	 update_horizon: 1
+[2023-04-04 08:27:08,385][root][INFO] - 	 gamma: 0.990000
+[2023-04-04 08:27:08,385][root][INFO] - 	 saving to RAM
+[2023-04-04 08:27:08,434][root][INFO] - Filling replay with demos...
+[2023-04-04 08:29:57,315][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-04-04 08:29:57,345][root][INFO] - Using training device cuda:0.
+[2023-04-04 08:29:57,345][root][INFO] - Using env device cuda:0.
+[2023-04-04 08:29:57,359][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-04-04 08:29:57,359][root][INFO] - Starting seed 0.
+[2023-04-04 08:29:57,360][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-04-04 08:29:57,360][root][INFO] - 	 timesteps: 1
+[2023-04-04 08:29:57,360][root][INFO] - 	 replay_capacity: 100000
+[2023-04-04 08:29:57,360][root][INFO] - 	 batch_size: 1
+[2023-04-04 08:29:57,360][root][INFO] - 	 update_horizon: 1
+[2023-04-04 08:29:57,360][root][INFO] - 	 gamma: 0.990000
+[2023-04-04 08:29:57,360][root][INFO] - 	 saving to RAM
+[2023-04-04 08:29:57,364][root][INFO] - Filling replay with demos...
+[2023-04-04 08:30:06,918][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 10
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-04-04 08:30:06,952][root][INFO] - Using training device cuda:0.
+[2023-04-04 08:30:06,952][root][INFO] - Using env device cuda:0.
+[2023-04-04 08:30:06,999][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-04-04 08:30:07,000][root][INFO] - Starting seed 0.
+[2023-04-04 08:30:07,001][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-04-04 08:30:07,002][root][INFO] - 	 timesteps: 1
+[2023-04-04 08:30:07,002][root][INFO] - 	 replay_capacity: 100000
+[2023-04-04 08:30:07,002][root][INFO] - 	 batch_size: 1
+[2023-04-04 08:30:07,002][root][INFO] - 	 update_horizon: 1
+[2023-04-04 08:30:07,002][root][INFO] - 	 gamma: 0.990000
+[2023-04-04 08:30:07,002][root][INFO] - 	 saving to RAM
+[2023-04-04 08:30:07,010][root][INFO] - Filling replay with demos...
+[2023-04-04 08:33:26,479][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 2
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-04-04 08:33:26,508][root][INFO] - Using training device cuda:0.
+[2023-04-04 08:33:26,508][root][INFO] - Using env device cuda:0.
+[2023-04-04 08:33:26,522][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-04-04 08:33:26,522][root][INFO] - Starting seed 0.
+[2023-04-04 08:33:26,523][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-04-04 08:33:26,523][root][INFO] - 	 timesteps: 1
+[2023-04-04 08:33:26,523][root][INFO] - 	 replay_capacity: 100000
+[2023-04-04 08:33:26,523][root][INFO] - 	 batch_size: 1
+[2023-04-04 08:33:26,523][root][INFO] - 	 update_horizon: 1
+[2023-04-04 08:33:26,523][root][INFO] - 	 gamma: 0.990000
+[2023-04-04 08:33:26,523][root][INFO] - 	 saving to RAM
+[2023-04-04 08:33:26,528][root][INFO] - Filling replay with demos...
+[2023-04-04 08:33:26,660][root][INFO] - Replay filled with demos.
+[2023-04-04 08:33:40,983][root][INFO] - # Q Params: 879553
+[2023-04-04 08:33:41,037][root][INFO] - # Q Params: 1186459
+[2023-04-04 08:34:03,394][root][WARNING] - Env train_env0 failed (1 times <= 2000). restarting
+[2023-04-04 08:34:13,467][root][WARNING] - Env train_env0 failed (2 times <= 2000). restarting
+[2023-04-04 08:34:22,866][root][INFO] - SIGINT captured. Shutting down.This may take a few seconds.
+[2023-04-04 08:34:23,500][root][WARNING] - Env train_env0 failed (3 times <= 2000). restarting
+[2023-04-04 08:36:47,145][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 2
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-04-04 08:36:47,181][root][INFO] - Using training device cuda:0.
+[2023-04-04 08:36:47,181][root][INFO] - Using env device cuda:0.
+[2023-04-04 08:36:47,195][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-04-04 08:36:47,195][root][INFO] - Starting seed 1.
+[2023-04-04 08:36:47,195][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-04-04 08:36:47,196][root][INFO] - 	 timesteps: 1
+[2023-04-04 08:36:47,196][root][INFO] - 	 replay_capacity: 100000
+[2023-04-04 08:36:47,196][root][INFO] - 	 batch_size: 1
+[2023-04-04 08:36:47,196][root][INFO] - 	 update_horizon: 1
+[2023-04-04 08:36:47,196][root][INFO] - 	 gamma: 0.990000
+[2023-04-04 08:36:47,196][root][INFO] - 	 saving to RAM
+[2023-04-04 08:36:47,201][root][INFO] - Filling replay with demos...
+[2023-04-04 08:36:47,331][root][INFO] - Replay filled with demos.
+[2023-04-04 08:36:49,428][root][INFO] - # Q Params: 879553
+[2023-04-04 08:36:49,483][root][INFO] - # Q Params: 1186459
+[2023-04-04 08:44:24,839][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 2
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-04-04 08:44:24,869][root][INFO] - Using training device cuda:0.
+[2023-04-04 08:44:24,869][root][INFO] - Using env device cuda:0.
+[2023-04-04 08:44:24,884][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-04-04 08:44:24,884][root][INFO] - Starting seed 2.
+[2023-04-04 08:44:24,885][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-04-04 08:44:24,885][root][INFO] - 	 timesteps: 1
+[2023-04-04 08:44:24,885][root][INFO] - 	 replay_capacity: 100000
+[2023-04-04 08:44:24,885][root][INFO] - 	 batch_size: 1
+[2023-04-04 08:44:24,885][root][INFO] - 	 update_horizon: 1
+[2023-04-04 08:44:24,885][root][INFO] - 	 gamma: 0.990000
+[2023-04-04 08:44:24,885][root][INFO] - 	 saving to RAM
+[2023-04-04 08:44:24,890][root][INFO] - Filling replay with demos...
+[2023-04-04 08:44:25,026][root][INFO] - Replay filled with demos.
+[2023-04-04 08:44:27,083][root][INFO] - # Q Params: 879553
+[2023-04-04 08:44:27,136][root][INFO] - # Q Params: 1186459
+[2023-04-04 08:45:33,503][root][INFO] - Step 100. Sample time: 0.0014595985412597656. Step time: 0.09389209747314453. Replay ratio: 49.9999750000125.
+[2023-04-04 08:45:53,394][root][INFO] - SIGINT captured. Shutting down.This may take a few seconds.
+[2023-04-04 08:45:59,729][root][INFO] - Clearing disk replay buffer.
+[2023-04-04 08:47:54,923][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 2
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-04-04 08:47:54,957][root][INFO] - Using training device cuda:0.
+[2023-04-04 08:47:54,957][root][INFO] - Using env device cuda:0.
+[2023-04-04 08:47:54,972][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-04-04 08:47:54,972][root][INFO] - Starting seed 3.
+[2023-04-04 08:47:54,972][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-04-04 08:47:54,972][root][INFO] - 	 timesteps: 1
+[2023-04-04 08:47:54,972][root][INFO] - 	 replay_capacity: 100000
+[2023-04-04 08:47:54,972][root][INFO] - 	 batch_size: 1
+[2023-04-04 08:47:54,972][root][INFO] - 	 update_horizon: 1
+[2023-04-04 08:47:54,972][root][INFO] - 	 gamma: 0.990000
+[2023-04-04 08:47:54,972][root][INFO] - 	 saving to RAM
+[2023-04-04 08:47:54,977][root][INFO] - Filling replay with demos...
+[2023-04-04 08:47:55,161][root][INFO] - Replay filled with demos.
+[2023-04-04 08:47:57,475][root][INFO] - # Q Params: 879553
+[2023-04-04 08:47:57,557][root][INFO] - # Q Params: 1186459
+[2023-04-04 08:49:19,612][root][INFO] - Step 100. Sample time: 0.0015156269073486328. Step time: 0.09211587905883789. Replay ratio: 12.499998437500196.
+[2023-04-04 08:49:29,291][root][INFO] - SIGINT captured. Shutting down.This may take a few seconds.
+[2023-04-04 08:49:36,428][root][INFO] - Clearing disk replay buffer.
+[2023-04-04 09:46:17,342][root][INFO] - 
+method:
+  name: C2FARM
+  lr: 0.0005
+  tau: 0.0025
+  activation: lrelu
+  norm: None
+  lambda_weight_l2: 1.0e-06
+  lambda_trans_qreg: 1.0
+  lambda_rot_qreg: 1.0
+  rotation_resolution: 5
+  image_crop_size: 64
+  bounds_offset:
+  - 0.15
+  voxel_sizes:
+  - 16
+  - 16
+  crop_augmentation: true
+  demo_augmentation: true
+  demo_augmentation_every_n: 10
+  exploration_strategy: gaussian
+rlbench:
+  task: reach_target
+  demos: 2
+  demo_path: /media/ylc/YETONG/2
+  episode_length: 10
+  cameras:
+  - wrist
+  camera_resolution:
+  - 128
+  - 128
+  scene_bounds:
+  - -0.3
+  - -0.5
+  - 0.6
+  - 0.7
+  - 0.5
+  - 1.6
+replay:
+  batch_size: 1
+  timesteps: 1
+  prioritisation: true
+  use_disk: false
+  path: /tmp/arm/replay
+framework:
+  log_freq: 100
+  save_freq: 100
+  train_envs: 1
+  eval_envs: 1
+  replay_ratio: 128
+  transitions_before_train: 200
+  tensorboard_logging: true
+  csv_logging: false
+  training_iterations: 40000
+  gpu: 0
+  env_gpu: 0
+  logdir: /media/ylc/YETONG/tmp/arm_test/
+  seeds: 1
+
+[2023-04-04 09:46:17,379][root][INFO] - Using training device cuda:0.
+[2023-04-04 09:46:17,379][root][INFO] - Using env device cuda:0.
+[2023-04-04 09:46:17,397][root][INFO] - CWD:/media/ylc/YETONG/tmp/arm_test/reach_target/C2FARM
+[2023-04-04 09:46:17,397][root][INFO] - Starting seed 4.
+[2023-04-04 09:46:17,397][root][INFO] - Creating a PrioritizedReplayBuffer replay memory with the following parameters:
+[2023-04-04 09:46:17,398][root][INFO] - 	 timesteps: 1
+[2023-04-04 09:46:17,398][root][INFO] - 	 replay_capacity: 100000
+[2023-04-04 09:46:17,398][root][INFO] - 	 batch_size: 1
+[2023-04-04 09:46:17,398][root][INFO] - 	 update_horizon: 1
+[2023-04-04 09:46:17,398][root][INFO] - 	 gamma: 0.990000
+[2023-04-04 09:46:17,398][root][INFO] - 	 saving to RAM
+[2023-04-04 09:46:17,440][root][INFO] - Filling replay with demos...
+[2023-04-04 09:46:17,682][root][INFO] - Replay filled with demos.
+[2023-04-04 09:46:19,822][root][INFO] - # Q Params: 879553
+[2023-04-04 09:46:19,876][root][INFO] - # Q Params: 1186459
+[2023-04-04 09:46:48,062][root][INFO] - SIGINT captured. Shutting down.This may take a few seconds.
+[2023-04-04 09:46:54,217][root][INFO] - Clearing disk replay buffer.

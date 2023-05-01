@@ -1,0 +1,4 @@
+- method=C2FARM
+- rlbench.task=take_lid_off_saucepan
+- rlbench.demo_path=/home/ylc/ARM/ARM-main/examples
+- framework.gpu=0

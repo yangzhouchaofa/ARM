@@ -1,0 +1,37 @@
+rlbench:
+    task: my_reach_target
+    demos: 10
+    demo_path: '/home/ylc/ARM/yt_data/real_demo/2'
+    episode_length: 10
+    cameras: [wrist] #[front]
+    camera_resolution: [128, 128]
+    scene_bounds: [0, -0.3, 0, 1, 0.7, 1] #[-0.3, -0.5, 0.6, 0.7, 0.5, 1.6]
+
+replay:
+    batch_size: 32 #128
+    timesteps: 1
+    prioritisation: True
+    use_disk: False
+    path: '/media/ylc/YETONG/tmp/arm/replay'  # Only used when use_disk is True.
+
+framework:
+    log_freq: 10 #100
+    save_freq: 10 #100
+    train_envs: 1
+    eval_envs: 1
+    replay_ratio: 128
+    transitions_before_train: 200 #200
+    tensorboard_logging: True
+    csv_logging: False #True
+    training_iterations: 40000
+    gpu: 0
+    env_gpu: 0
+    logdir: '/home/ylc/ARM/yt_data/tmp/real'
+    seeds: 1
+
+defaults:
+    - method: C2FARM
+
+hydra:
+    run:
+        dir: ${framework.logdir}/${rlbench.task}/${method.name}
