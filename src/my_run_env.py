@@ -162,8 +162,8 @@ class My_Run_Sence(Scene):
         T_tool0_tcp = Transform.from_dict({"rotation": [0, 0, -0.382, 0.924], "translation": [0, 0, 0.103399999]})
         T_tcp_tool0 = T_tool0_tcp.inverse()
         rospy.loginfo(action)
-        r = R.from_quat(np.array([- 9.69540444e-01, 2.39419397e-01, 5.02147978e-02, - 1.19379640e-02]))
-        # r = R.from_quat(np.array(action[3:7]))
+        # r = R.from_quat(np.array([- 9.69540444e-01, 2.39419397e-01, 5.02147978e-02, - 1.19379640e-02]))
+        r = R.from_quat(np.array(action[3:7]))
         T = Transform(r, np.array(action[:3]))
         if (boundary_min[0] <= action[0] <= boundary_max[0]) and \
                 (boundary_min[1] <= action[1] <= boundary_max[1]) and \

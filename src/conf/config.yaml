@@ -1,6 +1,6 @@
 rlbench:
-    task: my_reach_target
-    demos: 10
+    task: take_target_off_desk
+    demos: 3
     demo_path: '/home/ylc/ARM/yt_data/real_demo/2'
     episode_length: 10
     cameras: [wrist] #[front]
